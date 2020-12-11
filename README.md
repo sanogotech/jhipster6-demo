@@ -2,6 +2,30 @@
 
 This application was generated using JHipster 6.1.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.1.2](https://www.jhipster.tech/documentation-archive/v6.1.2).
 
+## BPMN Workflow
+
+https://blog.ippon.fr/2018/01/04/gestion-des-processus-metiers-embarquer-un-moteur-bpm-dans-votre-application-jhipster/
+
+```
+<properties>
+   <camunda.springboot.version>2.3.0</camunda.springboot.version>
+</properties>
+
+
+<dependency>
+   <groupId>org.camunda.bpm.springboot</groupId>
+   <artifactId>camunda-bpm-spring-boot-starter</artifactId>
+   <version>${camunda.springboot.version}</version>
+</dependency>
+<dependency>
+   <groupId>org.camunda.bpm.springboot</groupId>
+   <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
+   <version>${camunda.springboot.version}</version>
+</dependency>
+
+
+```
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
@@ -27,6 +51,10 @@ specifying a newer version in [package.json](package.json). You can also run `np
 Add the `help` flag on any command to see how you can use it. For example, `npm help update`.
 
 The `npm run` command will list all of the scripts available to run for this project.
+
+https://blog.ippon.fr/2018/01/04/gestion-des-processus-metiers-embarquer-un-moteur-bpm-dans-votre-application-jhipster/
+
+- Moteur BPMN
 
 ### Service workers
 
